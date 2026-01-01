@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --gpc-yellow:#facc15;
+  --gpc-black:#0b0f19;
+}
+
+/* reusable UI kit helpers */
+.glass{ background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.14); backdrop-filter: blur(10px); }
+.card{ @apply border border-slate-200 rounded-[18px] bg-white shadow-soft; }
+.btn{ @apply px-4 py-2 rounded-2xl font-extrabold text-sm; }
+.btn-primary{ @apply bg-gpc-black text-gpc-yellow hover:opacity-90; }
+.btn-ghost{ @apply bg-slate-100 text-slate-900 hover:bg-slate-200; }
+.btn-danger{ @apply bg-red-600 text-white hover:bg-red-700; }
+.field{ @apply w-full border border-slate-200 rounded-2xl px-3 py-2 bg-white focus:outline-none focus:ring-4 focus:ring-amber-200 focus:border-amber-400; }
+.badge{ @apply inline-flex items-center px-3 py-1 rounded-full text-[12px] font-extrabold; }
+.badge-green{ @apply bg-green-100 text-green-800; }
+.badge-yellow{ @apply bg-yellow-100 text-yellow-800; }
+.badge-red{ @apply bg-red-100 text-red-800; }
+.badge-gray{ @apply bg-slate-100 text-slate-900; }
+
+@media print{
+  .no-print{ display:none !important; }
+  body{ background:#fff !important; }
+}
