@@ -5,7 +5,6 @@ import App from './App'
 import { ensureDefaults } from './lib/storage'
 import { AuthProvider } from './lib/auth'
 import { DataProvider } from './lib/data'
-import { ensureDefaults } from "./lib/storage";
 
 ensureDefaults()
 
